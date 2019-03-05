@@ -9,7 +9,39 @@
  */
 
 // Your code :
-
+function multiply(a, b) {
+    let total = 0
+    let i = 0
+  
+    let aNega = a < 0
+    let bNega = b < 0
+  
+    if (a == 0 || b == 0) {
+      return 0;
+    }
+  
+    if (a < 0) {
+      a = -a;
+    }
+  
+    if (b < 0) {
+      b = -b;
+    }
+  
+    while (i < b) {
+      total = total + a;
+      i = i + 1;
+    }
+  
+    if (aNega) {
+      total = -total
+    }
+  
+    if (bNega) {
+      total = -total
+    }
+    return total;
+  }
 //* Begin of tests
 const assert = require('assert')
 

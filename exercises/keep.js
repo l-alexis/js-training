@@ -12,9 +12,19 @@
  *
  */
 
-
+function keepFirst (str){
+    return str.substring(0, 2)
+}
+function keepLast (str){
+    return str.substring(3, 5)
+}
+function keepFirstLast(str){
+    return str.substring(3, 5)
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(keepFirst('hello'),'he')
+assert.strictEqual(keepLast('hello'),'lo')
+assert.strictEqual(keepFirstLast('hello'),'lo')
 // End of tests */

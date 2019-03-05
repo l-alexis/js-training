@@ -7,7 +7,18 @@
  * Of course you may not use the method directly
  *
  */
-
+/*function repeat (str1, number1){
+    return str1.repeat(number1)
+}*/
+function repeat(str,  nbr) {
+    var repeat = "";
+    while (nbr > 0) {
+      repeat += str;
+      nbr--;
+    }
+    return repeat;
+  }
+  
 //* Begin of tests
 const assert = require('assert')
 
